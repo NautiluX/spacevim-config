@@ -10,3 +10,13 @@ mkdir -p ~/.SpaceVim.d
 cd ~/.SpaceVim.d
 git clone https://github.com/NautiluX/spacevim-config .
 ```
+
+3. Install fonts:
+
+```
+git clone https://github.com/ryanoasis/nerd-fonts.git
+cd nerd-fonts
+./install.sh
+```
+
+4. Use one of the fonts in terminal emulator (For example `FiraCode Nerd Font`)
