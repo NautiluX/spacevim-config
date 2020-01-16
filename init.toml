@@ -16,6 +16,7 @@
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = true
+    guifont = "FuraCode Nerd Font:h13"
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
     statusline_separator = "arrow"
@@ -33,6 +34,7 @@
     bootstrap_after = "myspacevim#after"
     bootstrap_before = "myspacevim#before"
     filemanager = "nerdtree"
+    disabled_plugins = [ "delimitMate" ]
 
 [[custom_plugins]]
 name = "vimwiki/vimwiki"
@@ -40,6 +42,8 @@ name = "vimwiki/vimwiki"
 name = 'chazy/dirsettings'
 [[custom_plugins]]
 name = 'ctrlpvim/ctrlp.vim'
+[[custom_plugins]]
+name = 'tpope/vim-markdown'
 
 merged = 0
 

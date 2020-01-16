@@ -28,4 +28,9 @@ function! myspacevim#after() abort
   set dir=~/vim_backups
 
   let g:ctrlp_map = '<c-p>'
+
+  noremap <Up> <Nop>
+  noremap <Down> <Nop>
+  noremap <Left> <Nop>
+  noremap <Right> <Nop>
 endfunction
