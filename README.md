@@ -6,6 +6,7 @@
 2. Install config:
 
 ```
+mkdir -p ~/vim_backups
 mkdir -p ~/.SpaceVim.d
 cd ~/.SpaceVim.d
 git clone https://github.com/NautiluX/spacevim-config .
