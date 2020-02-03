@@ -34,6 +34,7 @@
     bootstrap_after = "myspacevim#after"
     bootstrap_before = "myspacevim#before"
     filemanager = "nerdtree"
+    autocomplete_parens = false
     disabled_plugins = [ "delimitMate" ]
 
 [[custom_plugins]]
