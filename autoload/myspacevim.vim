@@ -33,4 +33,7 @@ function! myspacevim#after() abort
   noremap <Down> <Nop>
   noremap <Left> <Nop>
   noremap <Right> <Nop>
+
+  noremap <leader>db :DlvToggleBreakpoint<CR>
+  noremap <leader>dc :DlvConnect localhost:2345<CR>
 endfunction
