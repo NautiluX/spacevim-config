@@ -36,4 +36,13 @@ function! myspacevim#after() abort
 
   noremap <leader>db :DlvToggleBreakpoint<CR>
   noremap <leader>dc :DlvConnect localhost:2345<CR>
+  nnoremap <leader>rd :call GetDate('')<CR>
+
+endfunction
+function! GetDate(format)
+  let format = empty(a:format) ? '+%d %B %Y' : a:format
+  let cmd = 'LANG=en_US /bin/date -u ' . shellescape(format)
+  let result = substitute(system(cmd), '[\]\|[[:cntrl:]]', '', 'g')
+  " Append space + result to current line without moving cursor.
+  call setline(line('.'), getline('.') . ' ' . result)
 endfunction
